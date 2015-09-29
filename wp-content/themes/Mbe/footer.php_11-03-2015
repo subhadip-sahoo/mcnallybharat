@@ -1,0 +1,330 @@
+<div class="clr"></div>
+<div class="main_rep">
+  <div class="repar_area"> <span class="img_rep"><img src="<?php echo get_template_directory_uri();?>/images/wm_icon.png" title="" alt="" /></span>
+    <?php
+        if(is_active_sidebar('sidebar-3')){
+            dynamic_sidebar('sidebar-3');
+        }
+    ?>
+  </div>
+</div>
+<!--main_rep_End-->
+<div class="clr"></div>
+<!--Footer Start-->
+<div id="footer_contaner">
+  <div class="fot_menu_bx">
+    <h2>Products</h2>
+    <?php
+        $args_footer_product_menu1 = array(
+                'theme_location'  => 'footer-product-menu1',
+                'menu'            => '',
+                'container'       => '',
+                'container_class' => '',
+                'container_id'    => '',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul class="fot_menu_box">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => ''
+        );
+        wp_nav_menu( $args_footer_product_menu1 );
+    ?>
+<!--    <ul class="fot_menu_box">
+      <li><a href="#">Crushing Equipment</a></li>
+      <li><a href="#">Screening Equipment</a></li>
+      <li><a href="#">Grinding Equipment</a></li>
+      <li><a href="#">Feeding Equipment</a></li>
+      <li><a href="#">Material Handling Equipment</a></li>
+      <li><a href="#">Ash Handling Equipment</a></li>
+      <li><a href="#">Process Plant Equipment</a></li>
+    </ul>-->
+  </div>
+<div class="fot_menu_bx_mar">
+      <?php
+        $args_footer_product_menu2 = array(
+                'theme_location'  => 'footer-product-menu2',
+                'menu'            => '',
+                'container'       => '',
+                'container_class' => '',
+                'container_id'    => '',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul class="fot_menu_box">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => ''
+        );
+        wp_nav_menu( $args_footer_product_menu2 );
+    ?>
+<!--    <ul class="fot_menu_box">
+      <li><a href="#">Port Handling Equipment</a></li>
+      <li><a href="#">Open Cast Mining Equipment</a></li>
+      <li><a href="#">Equipment For Steel Plant</a></li>
+      <li><a href="#">Skid Mounted Crushing Plant</a></li>
+      <li><a href="#">Wheel Mounted Crushing & Screening Plant</a></li>
+      <li><a href="#">Job Shop</a></li>
+    </ul>-->
+  </div>
+  <div class="fot_menu_bx_facty">
+    <h2>Manufacturing Facility</h2>
+    <?php
+        $args_footer2 = array(
+                'theme_location'  => 'footer-menu2',
+                'menu'            => '',
+                'container'       => '',
+                'container_class' => '',
+                'container_id'    => '',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul class="fot_menu_box">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => ''
+        );
+        wp_nav_menu( $args_footer2 );
+    ?>
+  </div>
+  <div class="fot_menu_bx_associates">
+    <h2>Associates</h2>
+    <?php
+        $args_footer3 = array(
+                'theme_location'  => 'footer-menu3',
+                'menu'            => '',
+                'container'       => '',
+                'container_class' => '',
+                'container_id'    => '',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul class="fot_menu_box">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => ''
+        );
+        wp_nav_menu( $args_footer3 );
+    ?>
+  </div>
+  <div class="careers">
+    <h2>Careers</h2>
+    <?php
+        $args_footer4 = array(
+                'theme_location'  => 'footer-menu4',
+                'menu'            => '',
+                'container'       => '',
+                'container_class' => '',
+                'container_id'    => '',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul class="fot_menu_box">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => ''
+        );
+        wp_nav_menu( $args_footer4 );
+    ?>
+  </div>
+</div>
+<!--footer_contaner_End-->
+<div class="clr"></div>
+<div id="footer-btm">
+  <div class="container_fot">
+       <?php
+            if(is_active_sidebar('sidebar-4')){
+                dynamic_sidebar('sidebar-4');
+            }
+        ?>
+  </div>
+</div>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/script.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.bxslider').bxSlider({
+        slideWidth: 420,
+        minSlides: 1,
+        maxSlides: 2,
+        slideMargin: 0,
+        controls:false,
+        pager:false,
+        auto:true
+    });
+	$('#cat_banner_images').bxSlider({
+        slideWidth: 1000,
+        minSlides: 1,
+        maxSlides: 13,
+        slideMargin: 0,
+        controls:true,
+        pager:false,
+		infiniteLoop: false,
+		hideControlOnEnd: true,
+        auto:true
+    });
+	$('.menu_con ul.nav li:last').children('a').css('border','none');
+});
+</script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.fancybox').fancybox();
+    });
+</script>
+ <script type="text/JavaScript"> 
+	<!--
+	function MM_openBrWindow(theURL,winName,features) { //v2.0
+	  window.open(theURL,winName,features);
+	}
+	MM_reloadPage(true);
+	 
+	function MM_openBrWindow1(theURL,winName,features) { //v2.0
+	  window.open(theURL,winName,features);
+	}
+	//-->
+</script> 
+<?php 
+	if(is_page('Submit CV Online')){
+?>
+	<script type="text/javascript">
+		$(function(){				
+			//alert($('input[type=radio][name=advertise]').val());
+			$('input[type=radio][name=advertise]').change(function(){				
+				if($(this).val() == 'Yes'){					
+					$('#ad_options').show();
+				}else if($(this).val() == 'No'){
+					$('#ad_options').hide();
+				}
+			});	
+
+			$('input[type=radio][name=prev-empolyee]').change(function(){				
+				if($(this).val() == 'Yes'){					
+					$('#prev_employess').show();
+				}else if($(this).val() == 'No'){
+					$('#prev_employess').hide();
+				}
+			});
+
+			$('input[type=radio][name=interview]').change(function(){				
+				if($(this).val() == 'Yes'){					
+					$('#prev_interview').show();
+				}else if($(this).val() == 'No'){
+					$('#prev_interview').hide();
+				}
+			});
+			
+			$('input[type=radio][name=relative-employee]').change(function(){				
+				if($(this).val() == 'Yes'){					
+					$('#relative_empolyee').show();
+				}else if($(this).val() == 'No'){
+					$('#relative_empolyee').hide();
+				}
+			});
+		});
+	</script>
+<?php		
+	} 
+	if(is_page('Business Query') && 1 <> 1){
+?>
+	<script type="text/javascript">
+		$(function(){										
+			$('input[type=checkbox][name=interest[]]').each(function(){				
+				$(this).change(function(){					
+					if($(this).is(':checked')){						
+						var interest = $(this).val();
+						switch(interest){
+							case 'Crusher':
+								$('#Crusher').show();
+								break;
+							case 'Sump Pump':
+								$('#Sump-Pump').show();
+								break;
+							case 'Thickner':
+								$('#Thickner').show();
+								break;
+							case 'Screen':
+								$('#Screen').show();
+								break;
+							case 'Horizontal Slurry Pump':
+								$('#Horizontal_Slurry_Pump').show();
+								break;
+							case 'Flotation Cell Parameter':
+								$('#Flotation_Cell_Parameter').show();
+								break;
+							case 'Grinding Mill':
+								$('#Grinding_Mill').show();
+								break;
+							case 'Froth Pump':
+								$('#Froth_Pump').show();
+								break;
+							case 'Any Other':
+								$('#Any_Other').show();
+								break;
+						}
+					}
+					$('input[type=checkbox][name=interest[]]:not(:checked)').each(function(){
+						var interest = $(this).val();
+						switch(interest){
+							case 'Crusher':
+								$('#Crusher').hide();
+								break;
+							case 'Sump Pump':
+								$('#Sump-Pump').hide();
+								break;
+							case 'Thickner':
+								$('#Thickner').hide();
+								break;
+							case 'Screen':
+								$('#Screen').hide();
+								break;
+							case 'Horizontal Slurry Pump':
+								$('#Horizontal_Slurry_Pump').hide();
+								break;
+							case 'Flotation Cell Parameter':
+								$('#Flotation_Cell_Parameter').hide();
+								break;
+							case 'Grinding Mill':
+								$('#Grinding_Mill').hide();
+								break;
+							case 'Froth Pump':
+								$('#Froth_Pump').hide();
+								break;
+							case 'Any Other':
+								$('#Any_Other').hide();
+								break;
+						}
+					});					
+				});
+			});
+		});
+	</script>
+<?php		
+	}
+?>
+<?php wp_footer();?>
+</body>
+</html>

@@ -1,0 +1,11 @@
+#AuthName "Admins Only"
+#AuthUserFile /var/www/html/Mbe/php/wp-admin/passwd/.htpasswd
+#AuthGroupFile /dev/null
+#AuthType basic
+#require user admin
+
+# Stop bots from knocking on wp-login.php
+AuthName “Login Required"
+AuthType Basic
+AuthUserFile /var/www/html/Mbe/php/.htpasswd
+require valid-user

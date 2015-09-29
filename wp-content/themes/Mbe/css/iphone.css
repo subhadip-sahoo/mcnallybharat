@@ -1,0 +1,118 @@
+@media only screen and (max-width:768px) {
+img{
+		max-width:100%;
+		height:auto;
+}
+
+    .active {
+        display: block;
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+#bennar{
+	width:auto;
+	padding:20px;
+	min-height:inherit;
+	float:none;
+}
+.tag_box ul li{
+	padding:0px 15px;
+}
+.category_list {
+    border:none;
+    clear: both;
+    float: none;
+    margin: 0;
+    width: auto;
+	padding:20px;
+}
+.main_contaner{
+	width:auto;
+	padding:20px;
+	min-height:180px;
+}
+.colx , .colx:first-child , .colx:last-child {
+	margin-bottom:20px;
+	margin-left:50px;
+	display:inline-block;
+	float:none;
+}
+.repar_area{
+	padding:20px;
+	width:auto;
+}
+ul.rep_ul li{
+	padding:10px;
+}
+#footer_contaner{
+	padding:10px;
+	width:auto;
+}
+.fot_menu_bx{
+	width:82%;
+	margin-left:50px;
+}
+.fot_menu_bx_facty{
+	width:50%;
+}
+.fot_menu_bx_facty{
+	width:40%;
+	margin-left:50px;
+}
+.fot_menu_bx_associates{
+	width:auto;
+	margin-left:70px;
+}
+#footer_contaner > div {
+	margin-bottom:20px;	
+}
+.careers {
+	width:40%;
+	margin-left:50px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media all and (max-width:480px){
+	.fot_menu_bx{
+		width:100%;
+		margin-left:50px;
+	}
+	.fot_menu_bx .fot_menu_box li {
+		float:none;
+		width:auto;	
+	}
+	.colx, .colx:first-child, .colx:last-child {
+		margin-left:0;
+	}
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title><?php wp_title('|', TRUE, 'right');?></title>
+<meta name="viewport" content="width=device-width">
+<link href="<?php echo get_template_directory_uri();?>/css/style.css" type="text/css" rel="stylesheet" media="all" />
+<link href="<?php echo get_template_directory_uri();?>/css/iphone.css" type="text/css" rel="stylesheet" media="all" />
+<link href="<?php echo get_template_directory_uri();?>/css/responsive.css" type="text/css" rel="stylesheet" media="all" />
+<link href="<?php echo get_template_directory_uri();?>/css/tablet.css" type="text/css" rel="stylesheet" media="all" />
+<link href="<?php echo get_template_directory_uri();?>/css/jquery.bxslider.css" type="text/css" rel="stylesheet" media="all" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/jquery.fancybox.css" media="screen" />
+<script language=JavaScript> var message="Function Disabled!"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("return false") </script>
+<?php wp_head();?>
+<script type="text/JavaScript">
+    function killCopy(e){
+        return false
+    }
+    function reEnable(){
+        return true
+    }
+    document.onselectstart=new Function ("return false")
+    if (window.sidebar){
+        document.onmousedown=killCopy
+        document.onclick=reEnable
+    }
+</script>
+</head>
+<body <?php body_class();?>>
+<header class="wrap_area">
+    <div class="logo_area"> <a href="<?php echo home_url();?>"><img src="<?php header_image();?>" title="MBE" alt="Logo" /></a> </div>
+  <div class="search_area">
+    <h2><?php echo get_option('blogdescription');?></h2>
+    <form method="get" action="<?php echo home_url('/');?>" id="search">
+      <input name="s" type="text" size="40" placeholder="Search..." />
+    </form>
+  </div>
+  <div class="clr"></div>
+  <!--Menu-->
+  <div class="menu_con"> <a class="toggleMenu" href="#">Menu</a>
+      <?php
+        $args = array(
+                'theme_location'  => 'primary',
+                'menu'            => '',
+                'container'       => '',
+                'container_class' => '',
+                'container_id'    => '',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul class="nav">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => ''
+        );
+        wp_nav_menu( $args );
+    ?>
+  </div>
+  <?php if(is_front_page()){?>
+  <div class="banner_aside">
+  
+		
+    <div id="bennar"> 
+		<ul id="cat_banner_images">
+		<?php
+			$product_categories = get_categories(array('taxonomy' => 'product-categories', 'hide_empty' => 0));
+			/*echo '<pre>';
+			print_r($product_categories);*/
+			foreach($product_categories as $product_category){					
+				$url = get_term_link( $product_category->name,'product-categories' );
+				$cat_slider_image_id = $product_category->taxonomy."_".$product_category->term_id; 				
+				$cat_slider_image = get_field('taxonomy_slider_image', $cat_slider_image_id);				
+				if(empty($cat_slider_image)){
+					continue;
+				}
+				$image = vt_resize('', $cat_slider_image, 845, 395, true);
+		?>
+			<li><a href="<?php echo $url;?>"><img src="<?php echo $image['url'];?>" title="" alt="" width="<?php echo $image['width'];?>" height="<?php echo $image['height'];?>"/></a></li>			
+		<?php					
+			}
+			wp_reset_query();
+		?>
+		</ul>
+      <div class="tag_box">
+        <ul class="bxslider">
+            <?php
+                query_posts(array(
+                    'post_type' => 'news',
+                    'order' => 'DESC'
+                ));
+                if(have_posts()):
+                    while(have_posts()):
+                        the_post();
+            ?>
+            <li><a href="<?php echo the_permalink();?>"><?php the_title();?></a></li>
+            <?php
+                    endwhile;
+                    wp_reset_query();
+                endif;
+            ?>
+        </ul>
+      </div>
+      <!--tag_box_End--> 
+    </div>
+    <!--bennar_End-->
+    
+    <div class="category_list">
+      <div class="hd_title">
+        <h1>Industries</h1>
+      </div>
+      <ul class="catg_list">
+        <li><a href="#">COAL AND LIGNITE</a></li>
+        <li><a href="#">IRON ORE</a></li>
+        <li><a href="#">ZINC</a></li>
+        <li><a href="#">COPPER</a></li>
+        <li><a href="#">ALUMINIUM</a></li>
+        <li><a href="#">URANIUM</a></li>
+        <li><a href="#">GOLD</a></li>
+        <li><a href="#">ROCK PHOSPHATE</a></li>
+        <li><a href="#">BAUXITE</a></li>
+        <li><a href="#">MINERAL BENEFICIATION</a></li>
+        <li><a href="#">STEEL </a></li>
+        <li><a href="#">POWER</a></li>
+        <li><a href="#">AGGREGATE</a></li>
+        <li><a href="#">CEMENT</a></li>
+        <li><a href="#">INFRASTRUCTURE</a></li>
+        <li><a href="#">JOBBING</a></li>
+      </ul>
+    </div>
+    <!--category_list_End--> 
+    
+  </div>
+  <!--banner_aside_end--> 
+  <?php } ?>
+</header>
+<div class="clr"></div>

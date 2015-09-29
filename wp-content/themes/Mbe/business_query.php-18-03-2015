@@ -1,0 +1,68 @@
+<?php
+/* Template Name: Business Query */
+get_header();
+global $post;
+?>
+<div class="main_contaner">
+    <article id="post-571" class="post-571 page type-page status-publish hentry">
+                <h2 class="page-title">Business Query</h2>
+       <div class="page-con clearfix"> 
+	   <div class="wpcf7" id="wpcf7-f570-p571-o1" lang="en-US" dir="ltr">
+		<div class="screen-reader-response"></div>
+<form name="" action="" method="post" class="wpcf7-form" novalidate="novalidate">
+<h3>Business Query</h3>
+<dl>
+<dt>Company Name*</dt>
+<dd><span class="wpcf7-form-control-wrap company-name"><input type="text" name="company-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" /></span></dd>
+</dl>
+<dl>
+<dt>Designation* </dt>
+<dd><span class="wpcf7-form-control-wrap designation"><input type="text" name="designation" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" /></span></dd>
+</dl>
+<dl>
+<dt>Contact No* </dt>
+<dd><span class="wpcf7-form-control-wrap contact-no"><input type="text" name="contact-no" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" /></span></dd>
+</dl>
+<dl>
+<dt>Subject*</dt>
+<dd><span class="wpcf7-form-control-wrap subject"><textarea name="subject" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false"></textarea></span></dd>
+</dl>
+<dl>
+<dt>Name of the Person*</dt>
+<dd><span class="wpcf7-form-control-wrap name-of-person"><input type="text" name="name-of-person" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" /></span></dd>
+</dl>
+<dl>
+<dt>Email Address*</dt>
+<dd><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" /></span></dd>
+</dl>
+<dl>
+<dt>Postal Address *</dt>
+<dd><span class="wpcf7-form-control-wrap postal-address"><textarea name="postal-address" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false"></textarea></span></dd>
+</dl>
+<dl class="tick-dl">
+<dt>Please tick the product you are interested in :</dt>
+<dd><span class="wpcf7-form-control-wrap interest"><span class="wpcf7-form-control wpcf7-checkbox checkbox checkbox-inline"><span class="wpcf7-list-item first"><span class="wpcf7-list-item-label">Crushing Equipment</span>&nbsp;<input type="checkbox" name="interest[]" value="Crushing Equipment" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Screening Equipment</span>&nbsp;<input type="checkbox" name="interest[]" value="Screening Equipment" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Grinding Equipment</span>&nbsp;<input type="checkbox" name="interest[]" value="Grinding Equipment" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Feeding Equipment</span>&nbsp;<input type="checkbox" name="interest[]" value="Feeding Equipment" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Material Handling Equipment</span>&nbsp;<input type="checkbox" name="interest[]" value="Material Handling Equipment" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Ash Handling Equipment</span>&nbsp;<input type="checkbox" name="interest[]" value="Ash Handling Equipment" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Process Plant Equipment</span>&nbsp;<input type="checkbox" name="interest[]" value="Process Plant Equipment" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Port Handling Equipment</span>&nbsp;<input type="checkbox" name="interest[]" value="Port Handling Equipment" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Opencast Mining Equipment</span>&nbsp;<input type="checkbox" name="interest[]" value="Opencast Mining Equipment" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Equipment For Steel Plant</span>&nbsp;<input type="checkbox" name="interest[]" value="Equipment For Steel Plant" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Skid Mounted Crushing Plant</span>&nbsp;<input type="checkbox" name="interest[]" value="Skid Mounted Crushing Plant" /></span><span class="wpcf7-list-item"><span class="wpcf7-list-item-label">Wheel Mounted Crushing &amp; Screening Plant</span>&nbsp;<input type="checkbox" name="interest[]" value="Wheel Mounted Crushing &amp; Screening Plant" /></span><span class="wpcf7-list-item last"><span class="wpcf7-list-item-label">Job Shop</span>&nbsp;<input type="checkbox" name="interest[]" value="Job Shop" /></span></span></span></dd>
+</dl>
+<dl class="space-dl-none">
+<dt>Enter Image Verification Code *</dt>
+<dd>
+	<input type="hidden" name="_wpcf7_captcha_challenge_captcha-675" value="903109955" />
+	<img class="wpcf7-form-control wpcf7-captchac wpcf7-captcha-captcha-675" width="72" height="24" alt="captcha" src="http://111.93.163.218/Mbe/php/wp-content/uploads/wpcf7_captcha/903109955.png" /></dd>
+</dl>
+<dl class="space-dl-none">
+<dt></dt>
+<dd><span class="wpcf7-form-control-wrap captcha-675"><input type="text" name="captcha-675" value="" size="40" class="wpcf7-form-control wpcf7-captchar form-control" aria-invalid="false" /></span></dd>
+</dl>
+<dl class="space-dl-none">
+<dt></dt>
+<dd><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit btn" /> <input type="reset" value="Reset" class="btn"></dd>
+</dl>
+<div class="wpcf7-response-output wpcf7-display-none"></div>
+</form>
+</div>
+</div>
+<div class="clr"></div>
+</article>
+</div>
+<div class="clr"></div>
+<?php get_footer();?>

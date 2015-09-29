@@ -1,0 +1,256 @@
+@media only screen and (min-width:760px) and (max-width:1024px) {
+img{
+		max-width:100%;
+		height:auto;
+}
+.menu_con{
+	width:99%;
+}
+#bennar{
+	width:auto;
+	padding:20px;
+	height:auto;
+}
+.tag_box ul li{
+	padding:0px 15px;
+}
+.category_list {
+    border:none;
+    clear: both;
+    float: none;
+    margin: 0;
+    width: auto;
+	padding:20px;
+}
+.colx:last-child {
+    /*float: left;
+	margin-left:50px;*/
+}
+.main_contaner{
+	width:auto;
+	padding:20px;
+	min-height:180px;
+}
+.colx , .colx:first-child , .colx:last-child {
+	margin-bottom:20px;
+	margin-left:25px;
+	margin-right:25px;
+	display:inline-block;
+	float:none;
+}
+.repar_area{
+	padding:20px;
+	width:100%;
+}
+ul.rep_ul li{
+	padding:10px;
+}
+#footer_contaner{
+	padding:10px;
+	width:auto;
+}
+.fot_menu_bx{
+	width:50%;
+	margin-left:50px;
+}
+.fot_menu_bx_facty{
+	width:50%;
+	min-height:200px;
+}
+.fot_menu_bx_facty{
+	width:40%;
+	margin-left:50px;
+}
+.fot_menu_bx_associates{
+	width:auto;
+	margin-left:70px;
+}
+.wrap_area{
+	width:auto;
+	padding:10px 15px 10px 10px;
+}
+.toggleMenu{
+	width:100%;
+}
+a.toggleMenu{
+	text-align:center;
+	color:#FFF;
+}
+a.toggleMenu:hover{
+	color:#16b6ed;
+}
+#footer_contaner > div {
+	margin-bottom:20px;	
+}
+#bennar .bx-wrapper img{
+		max-width:100% !important;
+		height:auto !important;
+		width:100% !important;
+}
+#bennar{
+		width:65%;
+		float:left;
+		padding:0;
+}
+.category_list{
+		width:35%;
+		float:right;
+		clear:inherit !important;
+		padding:0px 0 0 20px !important;
+}
+.category_list .catg_list{
+		height:214px !important;
+		overflow:auto;
+}
+.main_contaner .download-list-pdf p{
+		font-size:11px;
+}
+.wp-caption {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #f0f0f0;
+    max-width:100%;
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.alignleft {
+    float: none;
+    margin: 5px 0px 20px 0;
+	width:auto !important;
+}
+.hentry form dd {
+    margin-left: 174px;
+    width: 40%;
+}
+.hentry dt {
+    font-size: 11px;
+    font-weight: bold;
+}
+.hentry form dl.space-dl dd {
+    width: 42%;
+}
+.three-block-image {
+		text-align:left !important;
+}
+}
+@media only screen and (min-width:1030px) and (max-width:1100px) {
+#header_main_menu > li:last-child > a, .nav a{
+		padding: 12px 25px;
+}	
+.banner_aside{
+		margin:0 15px;
+}
+.banner_aside #bennar{
+		width:73.8%;
+}
+.banner_aside .category_list {
+    margin:0 31px 0 0;
+}
+}
+@media only screen and (min-width:760px) and (max-width:1024px) {
+	a.toggleMenu {
+    color: #fff;
+    text-align: left !important;
+	background:url(../images/nav-icon.png) 94% 50% no-repeat #666;
+}	
+a.toggleMenu:hover{
+	color:#fff !important;
+}
+#bennar .bx-wrapper img{
+		max-width:100% !important;
+		height:auto !important;
+}
+.nav > li > .parent::after{
+		top:22px !important;
+}
+.nav li li a.parent::after{
+		display:none !important;
+}
+#header_main_menu > li:last-child > a, .nav a{
+		padding: 12px 15px !important;
+}
+}
+@media only screen and (min-width:995px) and (max-width:1024px) {
+	.nav a {
+		padding:12px 22px 12px 21px !important;
+	}
+	#header_main_menu > li:last-child > a {
+		padding:12px 23px !important;
+	}
+	
+	.colx:last-child , .colx {
+		float:none;
+		display:inline-block;
+		vertical-align:top;
+		margin-top:15px;
+	}
+	.main_contaner.homepage .colx{
+			float:left;
+			width:22.7%;
+			margin:0 10px;
+	}
+	.main_contaner.homepage .colx p{
+			text-align:center !important;
+			min-height:68px;
+			border-bottom:1px solid #CCC;
+	}
+	.category_list .catg_list {
+    height: 276px !important;
+    overflow: auto;
+}
+}
+@media (max-width:600px) {
+	.alignleft {
+		float: none;
+		display:block;
+	}
+}
+@media (max-width:500px) {
+	/*.table.table-bordered td {
+		display:block;
+		float:none;
+	}*/
+}
+
+@media (max-width:800px) {
+	#footer_contaner {
+		text-align:center;
+	}
+	.fot_menu_bx , .fot_menu_bx_mar , .fot_menu_bx_facty , .fot_menu_bx_associates , .careers {
+		float:none;
+		display:inline-block;
+		text-align: left;
+		vertical-align: top;
+		width: 250px;
+		margin:7px 15px;
+		min-height:auto !important;
+		height:auto;
+}
+.contact-lists {
+	text-align:center;
+}
+.hentry .three-block-image li {
+	width:300px;
+	text-align:left;
+}
+}
+@media (max-width:450px) {
+.hentry .three-block-image li {
+	width:100%;
+	text-align:left;
+}
+.status-publish.hentry a {
+	word-break:break-all;
+	max-width:280px;
+	display:inline-block;
+}
+}
+.ngg-gallery-thumbnail-box {
+	float:none !important;
+	display:inline-block;
+}
+.ngg-galleryoverview {
+	text-align:center;
+}
+.homepage , .centerclass {
+	text-align:center;
+}
